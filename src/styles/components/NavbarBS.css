@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+*{
+  font-family: "Secular One", sans-serif !important;
+}
+.search-bar {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 7px 0px 7px;
+    background: #ffffff;
+    border: 1px solid #cacaca;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.mybtn:hover {
+  cursor: pointer;
+}
+.mybtn {
+  text-decoration: none;
+  color: black;
+  background-color: #f8f9fa;
+  border: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.logoside {
+  width: 50px;
+  padding-right: 2px;
+
+}

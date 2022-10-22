@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-image {
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-image .left-side {
+    width: 70%;
+    background-image: url(../../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-side h1 {
+    padding: 50px 0 0 30px;
+    color: white;
+}
+
+.logo img {
+    width: 50px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin-right: 30px;
+    margin-top: 12px;
+}
+
+.logo footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.form {
+    width: 40%;
+}
+
+a:hover {
+    cursor: pointer;
+}
+.button-login{
+  background-color: black !important;
+  color: white !important;
+}
+.button-login:hover{
+  background-color: white !important;
+  color: black !important;
+}
+.button-register{
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
+}
+.button-register:hover{
+  background-color: black !important;
+  color: white !important;
+}
+.form-floating{
+  width: 450px !important;
+}
+
+/* flex fill -> flex: 1; */
+
+@media (max-width: 768px) {
+    .left-side {
+        display: none;
+        
+    }
+    .form-floating{
+        width: 400px !important;
+      }
+    * {
+        color: rgb(0, 0, 0) !important;
+    }
+}

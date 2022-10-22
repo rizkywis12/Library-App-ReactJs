@@ -1,0 +1,53 @@
+*{
+    text-decoration: none;
+}
+.gallery {
+    margin-top: 1%;
+}
+.carousel{
+    margin-top: 13px !important;
+}
+    
+.gallery-cell {
+    width: 800px;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 50px;
+    counter-increment: gallery-cell;
+}
+
+    
+.gallery-cell img {
+    width: 800px;
+    height: 400px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(2px);
+}
+
+
+
+.gallery-cell h4 {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.gallery-cell p {
+    color: white;
+}
+.flickity-page-dots{
+    display: none !important;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.233);
+        position: absolute;
+        /* right: -254px; */
+        margin-left: -119px !important;
+        border-radius: 20px;
+        width: 100% !important;
+        bottom: 0px !important;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: center;
+
+}
