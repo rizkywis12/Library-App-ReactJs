@@ -30,7 +30,7 @@ const Register = () => {
             <Link to={"/login"} className="btn button-login shadow btn-lg me-2 mt-3">
               Login
             </Link>
-            <Link to={"/register"} className="btn button-register shadow btn-lg ms-1 mt-3">
+            <Link to={"/"} className="btn button-register shadow btn-lg ms-1 mt-3">
               Register
             </Link>
           </form>

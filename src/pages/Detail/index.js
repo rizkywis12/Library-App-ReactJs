@@ -17,7 +17,7 @@ const Detail = () => {
     <Modals className="text-light fs-4 fw-bold" buttonName="Edit" modalTitle="Edit Data"></Modals>
     <ModalDelete booktitle={book.title} desc="Book deleted" className="text-light fs-3 fw-bold" buttonName="Delete" modalTitle="Delete This Data"></ModalDelete>
     </div>
-    <Link className='fs-1 text-light position-absolute ms-2'  to="/"><BsFillArrowLeftCircleFill /></Link>
+    <Link className='fs-1 text-light position-absolute ms-2'  to="/home"><BsFillArrowLeftCircleFill /></Link>
     <img class="banner" src={book.cover} alt=""/>
     <div class="container content">
         <div class="row">

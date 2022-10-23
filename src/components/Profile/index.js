@@ -1,12 +1,13 @@
-/* eslint-disable no-restricted-globals */
+
 import "../../styles/components/Profile.css"
 import avatar from "../../assets/avatar.png"
 
 const Profile = () => {
   function confirmAction() {
-    let confirmAction = confirm("Are you sure want to log out?");
+    // eslint-disable-next-line no-restricted-globals
+    const confirmAction = confirm("Are you sure want to log out?");
     if (confirmAction) {
-      window.location.replace('/register')
+      window.location.replace('/')
     } 
   }
   
