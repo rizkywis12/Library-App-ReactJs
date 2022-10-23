@@ -11,12 +11,12 @@ import Detail from "../Detail";
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/detail/:id" element={<Detail />} />
-      </Routes>
+    <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/detail/:id" element={<Detail />} />
+    <Route path="/login" element={<Login />} />
+    <Route path="/register" element={<Register />} />
+    </Routes>
     </BrowserRouter>
   )
 }
