@@ -5,7 +5,7 @@ const Profile = () => {
   function confirmAction() {
     let confirmAction = confirm("Are you sure want to log out?");
     if (confirmAction) {
-      window.location.replace('/register')
+      window.location.replace('/')
     } 
   }
   

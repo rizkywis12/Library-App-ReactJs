@@ -50,7 +50,7 @@ const Login = () => {
             <FloatingLabel controlId="floatingPassword" label="Password">
               <Form.Control type="password" placeholder="Password"   onChange={(e) => passwordChange(e)} />
             </FloatingLabel>
-            <Link to={"/"} className="btn button-login shadow btn-lg me-2 mt-3" onClick={(e) => checkUser(e)}>
+            <Link to={"/home"} className="btn button-login shadow btn-lg me-2 mt-3" onClick={(e) => checkUser(e)}>
               Login
             </Link>
             <Link to={"/register"} className="btn button-register shadow btn-lg ms-1 mt-3">
