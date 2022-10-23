@@ -5,3 +5,6 @@
 .text-light:hover{
 color: black !important;
 }
+.button{
+    width: 319px;
+}

@@ -5,7 +5,7 @@ import checked from '../../assets/checked.png'
 
 const ModalDelete = (props) => {
       
-    const { buttonName, modalTitle, className,mytext} = props;
+    const { buttonName, modalTitle, className,booktitle,desc} = props;
     
   
     const [show, setShow] = useState(false);
@@ -14,10 +14,6 @@ const ModalDelete = (props) => {
     } 
     const handleShow = () => {
       setShow(true);
-    }
-    const Myalert =() =>{
-      alert("Data Succesfully Delete");
-     setShow(false)
     }
   
     return (
@@ -32,11 +28,11 @@ const ModalDelete = (props) => {
           <Modal.Body className="mx-auto justify-content-center">
              <div className="mx-auto text-center">
              <img src={checked} alt=""/>
-             <h3>{mytext} deleted</h3>
+             <h3>{booktitle} {desc}</h3>
              </div>
               </Modal.Body>
           <Modal.Footer>
-            <Button variant="warning" onClick={Myalert}>
+            <Button variant="warning" onClick={handleClose}> 
              OK
             </Button>
           </Modal.Footer>

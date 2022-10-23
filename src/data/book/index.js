@@ -13,18 +13,18 @@ export const dataBooks = [
         image: cover1,
         cover: dilan,
         title: "Dilan 1990",
-        creation: "Pidi Baiq",
+        penulis: "Pidi Baiq",
         description: "bercerita tentang kisah cinta dua remaja Bandung pada tahun 90an. Berawal dari seorang siswa bernama Dilan yang jatuh cinta dengan siswi pindahan dari SMA di Jakarta bernama Milea"
     },
     {
         id : 2,
         date: "13 September 2016",
-        category: "Book",
+        category: "Novel",
         stock: "available",
         image: cover2,
         cover: Bodoamat,
         title: "Sebuah Seni Bersifat Bodoamat",
-        creation: "Mark Manson",
+        penulis: "Mark Manson",
         description: "Novel yang berjudul Sebuah Seni Untuk Bersikap Bodo Amat merupakan kisah nyata tentang seseorang yang bernama Charles Bukowski yang mempunyai masa lalu yang kelam."
     },
     { 
@@ -35,7 +35,7 @@ export const dataBooks = [
         image: cover3,
         cover: react,
         title: "React Native",
-        creation: "Ronnie Eismenn",
+        penulis: "Ronnie Eismenn",
         description: "Bahasa Pemrograman menjadi landasan utama ketika ingin membuat sebuah aplikasi maupun website. Untuk menciptakan aplikasi mobile yang menggunakan sistem operasi Android maupun iOS. "
     }
     
