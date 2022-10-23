@@ -1,8 +1,6 @@
 /* eslint-disable no-restricted-globals */
-import React, { useState } from 'react'
 import "../../styles/components/Profile.css"
 import avatar from "../../assets/avatar.png"
-import { Link } from 'react-router-dom'
 const Profile = () => {
   function confirmAction() {
     let confirmAction = confirm("Are you sure want to log out?");
