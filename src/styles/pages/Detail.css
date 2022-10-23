@@ -1,0 +1,7 @@
+.banner {
+    width: 100%;
+    height: 500px;
+}
+.text-light:hover{
+color: black !important;
+}

@@ -1,53 +1,59 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
+import { useState } from "react";
+import { Button, FloatingLabel, Form, Modal } from "react-bootstrap";
 
-function Modals() {
+const Modals = (props) => {
+      
+  const { buttonName, modalTitle, className} = props;
+
   const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = () =>{
+    setShow(false);
+  } 
+  const handleShow = () => {
+    setShow(true);
+  }
+  const Myalert =() =>{
+    alert("Data Succesfully Added");
+   setShow(false)
+  }
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+      <Button className={className} variant="none" onClick={handleShow}>{buttonName}
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>{modalTitle}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="name@example.com"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Example textarea</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-          </Form>
-        </Modal.Body>
+          <form>
+                    <div class="mb-3">
+                    <Form.Label>Url</Form.Label>
+                    <FloatingLabel controlId="floatingInput" label="Url">
+                    <Form.Control type="text" placeholder="Url" />
+                    </FloatingLabel>
+                    </div>
+                    <div class="mb-3"> 
+                    <Form.Label>Title</Form.Label>
+                    <FloatingLabel controlId="floatingInput" label="Title">
+                    <Form.Control type="text" placeholder="Your Title" />
+                    </FloatingLabel>
+                      </div>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                    <Form.Label>Description</Form.Label>
+                    <Form.Control as="textarea" rows={4}  placeholder="Describe Your Book" />
+                    </Form.Group> 
+            </form>
+            </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
+          <Button variant="warning" onClick={Myalert}>
+            Save
           </Button>
         </Modal.Footer>
       </Modal>
     </>
+  
   );
 }
 

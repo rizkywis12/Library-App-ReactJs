@@ -8,7 +8,7 @@ import booksshelft from '../../assets/books.png'
 
 function NavbarBS() {
   return (
-    <div className='col-sm-5 col-lg-12'>
+    <div className='col-sm-12 col-lg-12'>
     <nav class="navbar navbar-expand-lg navbar-light shadow">
        <Dropdown />
        <Form className="form-inline mx-auto">
@@ -19,7 +19,7 @@ function NavbarBS() {
               aria-label="Search"
             />
           </Form>
-          <img className='logoside' src={booksshelft} alt="b" srcset="" />
+          <img className='logoside' src={booksshelft} alt="logo" srcset="" />
                     <h1 class="sidetitle mt-2">Library</h1>
     </nav>
     </div>

@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import LayoutAuth from "../../layouts/Auth";
 import booksshelft from '../../assets/books.png';
-import Login from "../Login";
-
 const Register = () => {
 
   return (
