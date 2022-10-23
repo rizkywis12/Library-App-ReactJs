@@ -5,7 +5,7 @@ import Home from "../Home";
 
 import Register from "../Register";
 import Login from "../Login";
-import Detail from "../detail";
+import Detail from "../Detail";
 
 
 const App = () => {
