@@ -33,7 +33,7 @@ const Detail = () => {
                             <h5 className="fs-2r ">{book.penulis}</h5>
                             </div>
                             <div class="col-lg-2">
-                            <p className='text-success'>{book.stock}</p>
+                            <p className='text-success fw-bold'>{book.stock}</p>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ const Detail = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-4">
+            <div class="col-lg-3 col-md-6 col-sm-4 py-3">
                 <img class="cover" src={book.image} alt="Cover" />
                 <ModalDelete className="button btn btn-warning  text-light fs-4 fw-bold bottom-0" buttonName="Borrow" 
                 modalTitle="Borrow This Book" booktitle={book.title} desc="Buku Berhasil Di Pinjam" ></ModalDelete>
